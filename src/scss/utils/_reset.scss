@@ -1,0 +1,33 @@
+body {
+  background-color: $color-bg;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.2px;
+  font-size: $ruler;
+}
+
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0%;
+  padding: 0%;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}

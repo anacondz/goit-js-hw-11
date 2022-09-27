@@ -1,0 +1,77 @@
+main {
+  padding-top: 75px;
+}
+
+.gallery {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding: 0 15px 10px 15px;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: inset -7px -8px 20px #fff, 5px 5px 20px #babecc;
+  transition: all 0.3s ease-in-out;
+
+  .card:hover &,
+  .card:focus & {
+    box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+  }
+}
+
+.card__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+.card__info-item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  font-size: 12px;
+
+  color: #61677c;
+  text-shadow: 1px 1px 1px $color-white;
+
+  &:not(:last-child)::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-right: 1px solid #e5e5e5;
+  }
+}
+
+.card__item-count {
+  margin-top: 3px;
+  text-shadow: 1px 1px 1px $color-white;
+
+  font-size: 10px;
+}
